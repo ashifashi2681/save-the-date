@@ -27,7 +27,7 @@ export const wedding = {
 	events: [
 		{
 			time: "10:30 AM",
-			title: "Nikah Ceremony",
+			title: "Gathering",
 			description: "The sacred beginning of our journey together.",
 			icon: "book",
 		},
@@ -42,6 +42,12 @@ export const wedding = {
 			title: "Wedding Feast",
 			description: "Join us for a delightful celebration.",
 			icon: "utensils",
+		},
+		{
+			time: "06:00 PM",
+			title: "Wedding Reception",
+			description: "Join us for a delightful celebration.",
+			icon: "heart",
 		},
 	],
 
