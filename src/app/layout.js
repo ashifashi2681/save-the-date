@@ -36,7 +36,8 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body
 				className={`${cormorant.variable} ${dmSans.variable} ${amiri.variable}`}>
-				{children}
+				<div className="block sm:hidden">{children}</div>
+				<p className="hidden sm:flex justify-center items-center h-100 text-purple-700">Optimized for Mobail view</p>
 			</body>
 		</html>
 	);
