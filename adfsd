@@ -1,0 +1,45 @@
+wedding-invitation/
+│
+├── public/
+│   ├── videos/
+│   │   ├── intro.mp4
+│   │   └── wedding-hero.mp4
+│   │
+│   ├── audio/
+│   │   └── wedding-music.mp3
+│   │
+│   ├── images/
+│   │   ├── pigeon.svg
+│   │   ├── couple-1.webp
+│   │   ├── couple-2.webp
+│   │   ├── couple-3.webp
+│   │   └── venue.webp
+│   │
+│   └── textures/
+│       └── paper-texture.png
+│
+├── src/
+│   ├── app/
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   │
+│   ├── components/
+│   │   ├── Intro.tsx
+│   │   ├── Hero.tsx
+│   │   ├── BackgroundMusic.tsx
+│   │   ├── PigeonFlight.tsx
+│   │   ├── DateReveal.tsx
+│   │   ├── Countdown.tsx
+│   │   ├── OurStory.tsx
+│   │   ├── WeddingEvents.tsx
+│   │   ├── Venue.tsx
+│   │   ├── QuranVerse.tsx
+│   │   ├── Blessing.tsx
+│   │   └── Footer.tsx
+│   │
+│   ├── data/
+│   │   └── wedding.ts
+│   │
+│   └── hooks/
+│       └── useGSAPAnimations.ts
