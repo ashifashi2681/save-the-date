@@ -1,21 +1,33 @@
 "use client";
 
+import { useState } from "react";
 import { wedding } from "@/data/wedding";
 
 export default function Hero() {
+	const [videoUnavailable, setVideoUnavailable] = useState(false);
+
 	return (
 		<section
 			id="home"
 			className="relative flex min-h-screen items-center justify-center
       overflow-hidden text-center">
+			<div
+				aria-hidden="true"
+				className="absolute inset-0 bg-cover bg-center"
+				style={{ backgroundImage: "url('/images/poster.png')" }}
+			/>
+
 			<video
 				autoPlay
 				muted
 				loop
 				playsInline
 				preload="metadata"
-				poster="/images/venue.webp"
-				className="absolute inset-0 h-full w-full object-cover [filter:hue-rotate(310deg)_saturate(0.7)_brightness(1.2)]">
+				poster="/images/poster.png"
+				onError={() => setVideoUnavailable(true)}
+				className={`absolute inset-0 h-full w-full object-cover ${
+					videoUnavailable ? "hidden" : "block"
+				}`}>
 				<source src="/videos/wedding-hero.mp4" type="video/mp4" />
 			</video>
 
