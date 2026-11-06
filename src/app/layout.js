@@ -21,11 +21,11 @@ const amiri = Amiri({
 });
 
 export const metadata = {
-	title: "Ahmed & Fatima | Wedding Invitation",
+	title: "Ashif & Rashida | Wedding Invitation",
 	description:
 		"Together with our families, we invite you to celebrate our wedding.",
 	openGraph: {
-		title: "Ahmed & Fatima | Wedding Invitation",
+		title: "Ashif & Rashida | Wedding Invitation",
 		description: "Join us in celebrating our special day.",
 		images: ["/images/venue.webp"],
 	},

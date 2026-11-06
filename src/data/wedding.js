@@ -12,10 +12,16 @@ export const wedding = {
 	},
 
 	location: {
-		name: "Grand Wedding Auditorium",
-		address: "Kochi, Kerala, India",
-		mapUrl: "https://maps.google.com/?q=Kochi+Kerala",
-		embedUrl: "https://www.google.com/maps?q=Kochi%20Kerala&output=embed",
+		name: "Bride's Home",
+		address: "Kuttipala, Ponmundam",
+		mapUrl: "https://maps.app.goo.gl/q45ZkKcaeXfEjFLj7",
+		time: "At 10 AM",
+	},
+	location2: {
+		name: "Galaxy Auditorium",
+		address: "Chattiparamba, Malappuram",
+		mapUrl: "https://maps.app.goo.gl/c9N6S9MvSThxcu1e6",
+		time: "After 6 PM",
 	},
 
 	events: [
@@ -43,20 +49,27 @@ export const wedding = {
 		{
 			year: "JAN/2026",
 			title: "The Beginning",
-			description: "Every beautiful journey begins with a moment.",
-			image: "/images/couple-1.webp",
+			description: "We started from here at this fine moment.",
+			image: "/images/jan.jpeg",
 		},
 		{
-			year: "2025",
+			year: "MAR/2026",
 			title: "Growing Together",
 			description: "Building memories and cherishing every moment.",
-			image: "/images/couple-2.webp",
+			image: "/images/mar.png",
 		},
 		{
-			year: "2027",
+			year: "MAY/2026",
+			title: "Surviving Together",
+			description:
+				"Weathering all our little clashes and sweet reconciliations, we grew together.",
+			image: "/images/may.jpeg",
+		},
+		{
+			year: "SEP/2026",
 			title: "A Lifetime Together",
 			description: "The beginning of our forever, InshaAllah.",
-			image: "/images/couple-3.webp",
+			image: "/images/sep.jpeg",
 		},
 	],
 };

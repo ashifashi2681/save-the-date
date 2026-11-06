@@ -26,18 +26,30 @@ export default function OurStory() {
 								key={item.year}
 								data-reveal
 								className={`grid items-center gap-8 md:grid-cols-2
-                ${index % 2 ? "md:[&>*:first-child]:order-2" : ""}`}>
-								<div
-									className="relative aspect-[4/3] overflow-hidden
-                rounded-3xl">
-									<Image
-										src={item.image}
-										alt={item.title}
-										fill
-										sizes="(max-width: 768px) 100vw, 50vw"
-										className="object-cover transition-transform
-                    duration-700 hover:scale-105"
-									/>
+                				${index % 2 ? "md:[&>*:first-child]:order-2" : ""}`}>
+								<div className="group relative mx-auto aspect-[3/4] w-full max-w-sm">
+									<div className="absolute -inset-3 rounded-[2rem] border border-[#C5A46D]/55" />
+									<div className="absolute -inset-1 rounded-[1.65rem] bg-[#E9D8F2]/70 blur-sm" />
+
+									<div
+										className="relative h-full overflow-hidden rounded-[1.4rem]
+                border-[6px] border-white shadow-[0_18px_35px_rgba(116,96,128,0.24)]">
+										<Image
+											src={item.image}
+											alt={item.title}
+											fill
+											sizes="(max-width: 768px) min(100vw - 40px, 384px), 384px"
+											className="object-cover transition-transform duration-700 group-hover:scale-105"
+										/>
+
+										<div className="absolute inset-0 bg-gradient-to-t from-[#44384D]/35 via-transparent to-white/10" />
+									</div>
+
+									<span
+										aria-hidden="true"
+										className="absolute -bottom-5 left-1/2 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full border border-[#C5A46D]/70 bg-[#F8F5FC] text-sm text-[#C5A46D] shadow-sm">
+										♥
+									</span>
 								</div>
 
 								<div className="px-3 py-5 md:px-12">
