@@ -62,7 +62,7 @@ export default function Home() {
 
 			<QuranVerse />
 
-			<OurStory />
+			{/* <OurStory /> */}
 
 			<WeddingEvents />
 
